@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(50deg,#88e23b,#ebe480,#043c6e,#60a85f, #a6cccc, #6b7132 );
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0; 
+    background-attachment: fixed;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: linear-gradient(#88e23b,#ebe480 );
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0; 
+    background-attachment: fixed;
+    color: rgb(240, 248, 255);
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: rgb(33, 87, 135);
+}
+
+li:hover{
+    color: #48ac15;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transform: scale(1.1);
+    text-decoration-line: underline;
+    text-decoration-color: #28afca;
+}
+
+
+
+/*Tarjeta*/
+
+.cantidadPersonajes{
+    margin-left: 10px;
+}
+
+#root{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 95%;
+    margin: 10px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.card-image{
+    display: block;
+    overflow: hidden;
+}
+.card-image img{
+    width: 100%;
+}
+.card:hover{
+    box-shadow: 15px 15px 5px rgb(5, 5, 5);
+}
+.card-image:hover img{
+    transition: transform 0.5s;
+    transform: scale(1.3);
+    filter: grayscale(90%);
+}
+
+.card-content{
+    padding: 0 0 3px 8px;
+    box-shadow: 1px 1px 1px rgb(188, 187, 187);
+}
+
+.card-info a{
+    text-decoration: none;
+    color: #28afca;
+}
+
+.container-paginador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: black;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(240, 248, 255);
+}
+
+/*Responsive */
+
+@media (max-width: 600px){
+    header{
+        justify-content: center;
+    }
+    header ul{
+        display: none;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
